@@ -1,4 +1,10 @@
-﻿namespace GameMarket.Entities
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace GameMarket.Entities
 {
     public class Campaign
     {
