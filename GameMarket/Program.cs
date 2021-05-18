@@ -13,13 +13,34 @@ namespace GameMarket
                 Id = 1,
                 FirstName = "Mehmet Taha",
                 LastName = "Kocal",
-                DateOfBirth = new DateTime(2002, 06, 03),
+                DateOfBirth = new DateTime(2002, 03, 06),
+                NationalityId = 12341256235
+            };
+
+            Gamer gamer2 = new Gamer()
+            {
+                Id = 2,
+                FirstName = "Kemal",
+                LastName = "Guler",
+                DateOfBirth = new DateTime(2002, 06, 12),
+                NationalityId = 12341256235
+            };
+
+            Gamer gamer3 = new Gamer()
+            {
+                Id = 3,
+                FirstName = "Sinan",
+                LastName = "Oztek",
+                DateOfBirth = new DateTime(2002, 09, 17),
                 NationalityId = 12341256235
             };
 
             GamerManager gamerManager = new GamerManager(new VerificationManager());
             gamerManager.SignUp(gamer1);
+            gamerManager.Update(gamer2);
+            gamerManager.Delete(gamer3);
 
+            Console.WriteLine("*******************************************************");
 
             Game game1 = new Game()
             {
@@ -29,9 +50,27 @@ namespace GameMarket
             };
 
 
+            Game game2 = new Game()
+            {
+                Id = 2,
+                GameName = "Rocket League",
+                GamePrice = 32
+            };
+
+            Game game3 = new Game()
+            {
+                Id = 3,
+                GameName = "Prepar 3D V5",
+                GamePrice = 1600
+            };
+
+
             GameManager gameManager = new GameManager();
             gameManager.Add(game1);
+            gameManager.Delete(game2);
+            gameManager.Update(game3);
 
+            Console.WriteLine("*******************************************************");
 
             Campaign campaign1 = new Campaign()
             {
@@ -40,9 +79,27 @@ namespace GameMarket
                 Discount = 50
             };
 
+            Campaign campaign2 = new Campaign()
+            {
+                Id = 2,
+                CampaignName = "YAZ INDIRIMI !!!!",
+                Discount = 35
+            };
+
+            Campaign campaign3 = new Campaign()
+            {
+                Id = 3,
+                CampaignName = "SONBAHAR INDIRIMI !!!!",
+                Discount = 70
+            };
 
             SellManager sellManager = new SellManager();
             sellManager.Sell(game1, gamer1, campaign1);
+            sellManager.Sell(game2, gamer2, campaign2);
+            sellManager.Sell(game3, gamer3, campaign3);
+
+
+
 
             Console.ReadLine();
 

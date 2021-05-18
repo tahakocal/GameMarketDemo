@@ -28,12 +28,12 @@ namespace GameMarket.Concrete
 
         public void Update(Gamer gamer)
         {
-            Console.WriteLine("Bilgileriniz basariyla guncellendi");
+            Console.WriteLine("Sayin " + gamer.FirstName + " " + gamer.LastName + " bilgileriniz basariyla guncellendi");
         }
 
         public void Delete(Gamer gamer)
         {
-            Console.WriteLine("Bilgileriniz silindi");
+            Console.WriteLine("Sayin " + gamer.FirstName +" " + gamer.LastName+ " bilgileriniz silindi");
         }
     }
 }
