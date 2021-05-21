@@ -7,7 +7,14 @@ namespace GameMarket.Concrete
     {
         public bool CheckIfRealPerson(Gamer gamer)
         {
-            return true;
+            if (gamer.NationalityId.Length == 11)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

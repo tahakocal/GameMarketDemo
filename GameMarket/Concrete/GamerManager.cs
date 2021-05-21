@@ -22,7 +22,7 @@ namespace GameMarket.Concrete
             }
             else
             {
-                Console.WriteLine(gamer.FirstName + "Bilgileriniz hatali lutfen tekrar deneyiniz!");
+                Console.WriteLine(gamer.FirstName + " Bilgileriniz hatali lutfen tekrar deneyiniz!");
             }
         }
 

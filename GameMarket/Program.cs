@@ -14,7 +14,7 @@ namespace GameMarket
                 FirstName = "Mehmet Taha",
                 LastName = "Kocal",
                 DateOfBirth = new DateTime(2002, 03, 06),
-                NationalityId = 12341256235
+                NationalityId = "13141256235"
             };
 
             Gamer gamer2 = new Gamer()
@@ -23,22 +23,32 @@ namespace GameMarket
                 FirstName = "Kemal",
                 LastName = "Guler",
                 DateOfBirth = new DateTime(2002, 06, 12),
-                NationalityId = 12341256235
+                NationalityId = "1241256235"
             };
 
             Gamer gamer3 = new Gamer()
             {
                 Id = 3,
+                FirstName = "Kerim Samet",
+                LastName = "Ayas",
+                DateOfBirth = new DateTime(2002, 06, 17),
+                NationalityId = "12341256235"
+            };
+
+            Gamer gamer4 = new Gamer()
+            {
+                Id = 4,
                 FirstName = "Sinan",
                 LastName = "Oztek",
-                DateOfBirth = new DateTime(2002, 09, 17),
-                NationalityId = 12341256235
+                DateOfBirth = new DateTime(2002, 01, 12),
+                NationalityId = "12341256235"
             };
 
             GamerManager gamerManager = new GamerManager(new VerificationManager());
             gamerManager.SignUp(gamer1);
-            gamerManager.Update(gamer2);
-            gamerManager.Delete(gamer3);
+            gamerManager.SignUp(gamer2);
+            gamerManager.Update(gamer3);
+            gamerManager.Delete(gamer4);
 
             Console.WriteLine("*******************************************************");
 
