@@ -33,7 +33,7 @@ namespace GameMarket.Concrete
 
         public void Delete(Gamer gamer)
         {
-            Console.WriteLine("Sayin " + gamer.FirstName +" " + gamer.LastName+ " bilgileriniz silindi");
+            Console.WriteLine("Sayin " + gamer.FirstName + " " + gamer.LastName + " bilgileriniz silindi");
         }
     }
 }

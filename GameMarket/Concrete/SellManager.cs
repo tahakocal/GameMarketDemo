@@ -9,7 +9,7 @@ namespace GameMarket.Concrete
         public void Sell(Game game, Gamer gamer, Campaign campaign)
         {
             double campaignPrice = game.GamePrice - (game.GamePrice * campaign.Discount / 100);
-            Console.WriteLine(game.GameName+ " oyunumuzun size ozel indirimli fiyati sadece " + campaignPrice + " TL");
+            Console.WriteLine(game.GameName + " oyunumuzun size ozel indirimli fiyati sadece " + campaignPrice + " TL");
         }
     }
 }
